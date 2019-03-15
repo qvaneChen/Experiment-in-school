@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>index_login</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<style>
+			body {
+				font-family: "微软雅黑";
+			}
+			
+			.modal-body {
+				height: auto;
+				width: 600px;
+				margin: auto;
+			}
+			.jumbotron1{
+				margin:50px 0 0 450px;
+			}
+			div.container {
+				margin: 150px auto;
+				background: url(img/gene2.jpg);
+				opacity: 2;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<div class="jumbotron1">
+				<h3>欢迎登陆基因说！</h3>
+			</div>
+			<div >
+				<div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label for="username" class="col-sm-2 control-label"> 账号 </label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="username" placeholder="请输入账号">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword" class="col-sm-2 control-label"> 密码 </label>
+							<div class="col-sm-8">
+								<input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-8">
+								<div class="checkbox">
+									<label>
+								<input type="checkbox"> 记住密码
+								</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-8">
+								<button type="button" class="btn btn-primary btn-block" onclick="location.href='index.html';"> 登录 </button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

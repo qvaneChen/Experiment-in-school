@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>admin_index</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/admin_index.css">
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo" onclick="location.href='index.html';"><img src="img/logo.png" alt="logo" width="200px" height="60px"></div>
+			<div class="user">
+				<div class="dropdown">
+					<button type="button" class="btn btn-primary btn-sm" id="dropdownMenu1" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-user"></span> User <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation">
+							<a role="menuitem" tabindex="-1" href="#">修改密码</a>
+						</li>
+						<li role="presentation" class="divider"></li>
+						<li role="presentation">
+							<a role="menuitem" tabindex="-1" href="index_login.html">退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="container">
+				<ul class="nav nav-tabs">
+					<li class="disabled">
+						<a href="#"><span class="glyphicon glyphicon-user"></span> 用户管理 </a>
+					</li>
+					<li class="active">
+						<a data-toggle="tab" href="#menu2"><span class="glyphicon glyphicon-edit"></span> 临床信息 </a>
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-folder-open"></span> 后台文件 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a data-toggle="tab" href="#menu3_m1">HPO</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#menu3_m2">PHENOTYPE</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#menu3_m3">GENE</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#menu4"><span class="glyphicon glyphicon-stats"></span> 数据分析 </a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div id="menu2" class="tab-pane fade in active">
+						<ol class="breadcrumb">
+							<li>
+								<a href="#">基因说</a>
+							</li>
+							<li class="active">临床信息</li>
+						</ol>
+						<iframe src="houtai.html" scrolling="no" frameborder="0" style="height:600px;width:100%;"></iframe>
+					</div>
+					<div id="menu3_m1" class="tab-pane fade">
+						<ol class="breadcrumb">
+							<li>
+								<a href="#">基因说</a>
+							</li>
+							<li class="active">后台文件</li>
+							<li class="active">HPO</li>
+						</ol>
+						<iframe src="a_hpo.html" scrolling="no" frameborder="0" style="height:600px;width:100%;"></iframe>
+					</div>
+					<div id="menu3_m2" class="tab-pane fade">
+						<ol class="breadcrumb">
+							<li>
+								<a href="#">基因说</a>
+							</li>
+							<li class="active">后台文件</li>
+							<li class="active">PHENOTYPE</li>
+						</ol>
+						<iframe src="a_phenotype.html" scrolling="no" frameborder="0" style="height:600px;width:100%;"></iframe>
+					</div>
+					<div id="menu3_m3" class="tab-pane fade">
+						<ol class="breadcrumb">
+							<li>
+								<a href="#">基因说</a>
+							</li>
+							<li class="active">后台文件</li>
+							<li class="active">GENE</li>
+						</ol>
+						<iframe src="a_gene.html" scrolling="no" frameborder="0" style="height:600px;width:100%;"></iframe>
+					</div>
+					<div id="menu4" class="tab-pane fade">
+						<ol class="breadcrumb">
+							<li>
+								<a href="#">基因说</a>
+							</li>
+							<li class="active">数据分析</li>
+						</ol>
+						<iframe src="shuju.html" scrolling="no" frameborder="0" style="height:600px;width:100%;"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			&copy;2015白原科技 All Rights Reserved武汉白原科技有限公司鄂ICP备16007337号-1
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,37 @@
+body{
+	font-family: "微软雅黑";
+}
+
+.header{
+	height:100px;
+	width:100%;
+	margin:20px auto;
+}
+
+.logo {
+	float: left;
+	left: 150px;
+	position: absolute;
+	height:60px;
+	width:200px;
+	display: block;
+	cursor: pointer;
+}
+
+.user {
+	float: left;
+	left: 1100px;
+	position: absolute;
+	margin:20px auto;
+}
+
+.content{
+	height:auto;
+	width:100%;
+}
+.footer{
+	height:50px;
+	width:100%;
+	text-align: center;
+	margin:20px auto;
+}
